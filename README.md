@@ -56,43 +56,47 @@ RupayDVD is a comprehensive DVD rental management system built with ASP.NET Web 
   - Roslyn Compiler Platform
 
 ## Project Structure
-├── Master/ # Master page templates and styling
-│ ├── Site1.Master # Main layout template with navigation
-│ ├── MasterPageStyle.css # Master page styling
-│ └── SignInStyles.css # Authentication pages styling
+
+```
+RupayDVD/
+├── Master/                     # Master page templates and styling
+│   ├── Site1.Master           # Main layout template with navigation
+│   ├── MasterPageStyle.css    # Master page styling
+│   └── SignInStyles.css       # Authentication pages styling
 │
-├── Models/ # Business logic and data models
-│ ├── DatabaseController.cs # Database operations handler
-│ ├── ResponseWrite.cs # Response handling utilities
-│ └── User.cs # User model and authentication
+├── Models/                     # Business logic and data models
+│   ├── DatabaseController.cs  # Database operations handler
+│   ├── ResponseWrite.cs       # Response handling utilities
+│   └── User.cs               # User model and authentication
 │
-├── View/ # ASP.NET Web Forms pages
-│ ├── Authentication/
-│ │ ├── signin.aspx # User login
-│ │ ├── Signout.aspx # User logout
-│ │ └── Password.aspx # Password management
-│ │
-│ ├── DVD Management/
-│ │ ├── AddADvd.aspx # Add new DVDs
-│ │ ├── DvdDetails.aspx # View/edit DVD details
-│ │ ├── DvdCopies.aspx # Manage DVD copies
-│ │ └── SearchADvd.aspx # Search functionality
-│ │
-│ ├── Loan Management/
-│ │ ├── IssueADvd.aspx # Issue DVDs to members
-│ │ ├── ReturnADvd.aspx # Process returns
-│ │ ├── DvdOnLoan.aspx # View loaned DVDs
-│ │ └── LoanedDvd.aspx # Loan history
-│ │
-│ └── Administration/
-│ ├── AdminPage.aspx # Admin dashboard
-│ ├── DeleteOldData.aspx # Data cleanup
-│ └── StaticMembers.aspx # Member statistics
+├── View/                      # ASP.NET Web Forms pages
+│   ├── Authentication/
+│   │   ├── signin.aspx       # User login
+│   │   ├── Signout.aspx     # User logout
+│   │   └── Password.aspx     # Password management
+│   │
+│   ├── DVD Management/
+│   │   ├── AddADvd.aspx     # Add new DVDs
+│   │   ├── DvdDetails.aspx  # View/edit DVD details
+│   │   ├── DvdCopies.aspx   # Manage DVD copies
+│   │   └── SearchADvd.aspx  # Search functionality
+│   │
+│   ├── Loan Management/
+│   │   ├── IssueADvd.aspx   # Issue DVDs to members
+│   │   ├── ReturnADvd.aspx  # Process returns
+│   │   ├── DvdOnLoan.aspx   # View loaned DVDs
+│   │   └── LoanedDvd.aspx   # Loan history
+│   │
+│   └── Administration/
+│       ├── AdminPage.aspx    # Admin dashboard
+│       ├── DeleteOldData.aspx # Data cleanup
+│       └── StaticMembers.aspx # Member statistics
 │
-├── App_Data/ # Application data storage
-├── Properties/ # Assembly information
-├── Web.config # Application configuration
-└── Global.asax # Application lifecycle events
+├── App_Data/                  # Application data storage
+├── Properties/                # Assembly information
+├── Web.config                # Application configuration
+└── Global.asax              # Application lifecycle events
+```
 
 ## Setup and Installation
 
