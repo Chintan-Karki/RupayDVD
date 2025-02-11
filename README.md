@@ -56,3 +56,95 @@ RupayDVD is a comprehensive DVD rental management system built with ASP.NET Web 
   - Roslyn Compiler Platform
 
 ## Project Structure
+├── Master/ # Master page templates and styling
+│ ├── Site1.Master # Main layout template with navigation
+│ ├── MasterPageStyle.css # Master page styling
+│ └── SignInStyles.css # Authentication pages styling
+│
+├── Models/ # Business logic and data models
+│ ├── DatabaseController.cs # Database operations handler
+│ ├── ResponseWrite.cs # Response handling utilities
+│ └── User.cs # User model and authentication
+│
+├── View/ # ASP.NET Web Forms pages
+│ ├── Authentication/
+│ │ ├── signin.aspx # User login
+│ │ ├── Signout.aspx # User logout
+│ │ └── Password.aspx # Password management
+│ │
+│ ├── DVD Management/
+│ │ ├── AddADvd.aspx # Add new DVDs
+│ │ ├── DvdDetails.aspx # View/edit DVD details
+│ │ ├── DvdCopies.aspx # Manage DVD copies
+│ │ └── SearchADvd.aspx # Search functionality
+│ │
+│ ├── Loan Management/
+│ │ ├── IssueADvd.aspx # Issue DVDs to members
+│ │ ├── ReturnADvd.aspx # Process returns
+│ │ ├── DvdOnLoan.aspx # View loaned DVDs
+│ │ └── LoanedDvd.aspx # Loan history
+│ │
+│ └── Administration/
+│ ├── AdminPage.aspx # Admin dashboard
+│ ├── DeleteOldData.aspx # Data cleanup
+│ └── StaticMembers.aspx # Member statistics
+│
+├── App_Data/ # Application data storage
+├── Properties/ # Assembly information
+├── Web.config # Application configuration
+└── Global.asax # Application lifecycle events
+
+## Setup and Installation
+
+### Prerequisites
+- Visual Studio 2017/2019
+- .NET Framework 4.7.2
+- SQL Server Express
+- IIS Express (included with Visual Studio)
+
+### Database Setup
+1. Open SQL Server Management Studio
+2. Create a new database named 'GroupCourseWork'
+3. Update connection string in Web.config if needed:
+```xml
+<connectionStrings>
+    <add name="MyConnection" 
+         connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=GroupCourseWork;Integrated Security=TRUE" 
+         providerName="System.Data.SqlClient"/>
+</connectionStrings>
+```
+
+### Build and Run
+1. Clone the repository
+2. Open RupayDVD.sln in Visual Studio
+3. Restore NuGet packages
+4. Build the solution (Ctrl + Shift + B)
+5. Run using IIS Express (F5)
+
+## Development Guidelines
+- Follow C# coding conventions
+- Use master page (Site1.Master) for consistent layout
+- Place business logic in Models folder
+- Keep UI code in View folder
+- Use DatabaseController for database operations
+- Implement proper error handling using ResponseWrite
+
+## Security Features
+- Windows Authentication
+- Role-based access control
+- Secure password management
+- SQL injection prevention
+- Session management
+
+## Contributing
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes
+4. Push to the branch
+5. Create a Pull Request
+
+## Version
+Current Version: 1.0.0.0
+
+## License
+Copyright © 2022. All rights reserved.
