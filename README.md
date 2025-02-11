@@ -1,4 +1,4 @@
-# RupayDVD Management System
+# RupayDVD 
 
 ## Overview
 RupayDVD is a comprehensive DVD rental management system built with ASP.NET Web Forms. This enterprise-level application provides a robust solution for managing DVD rentals, member information, and inventory tracking.
